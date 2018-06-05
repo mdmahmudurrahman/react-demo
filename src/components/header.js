@@ -12,7 +12,6 @@ class Header extends Component {
   // }
 
   state = {
-    title: 'The keywords are:',
     keywords: 'Hello'
   }
 
@@ -30,7 +29,6 @@ class Header extends Component {
   }
 
   render() { 
-    console.log(this.state.keywords);
     return (
       <header className="header">
         <div className="logo">Logo</div>   
@@ -38,8 +36,6 @@ class Header extends Component {
           type="text" 
           onChange={this.inputChangeHandler}
         />
-        <div>{this.state.title}</div>
-        <div>{this.state.keywords}</div>
       </header>
     )
   }  
